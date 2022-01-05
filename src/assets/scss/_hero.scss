@@ -1,0 +1,37 @@
+.hero-container {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero {
+    height: 100%;
+}
+
+.socialmedia {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialmedia i{
+    padding: 10px;
+    border-radius: 50px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialmedia i:hover {
+    background: -webkit-linear-gradient(right,#F652A0,#36EEE0);
+    background: linear-gradient(270deg,#F652A0 0,#36EEE0);
+    background-size: 350%;
+    -webkit-animation: gradientText 3s ease infinite;
+    animation: gradientText 3s ease infinite;
+
+}

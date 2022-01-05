@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- title -->
-    <title>F Λ B I Λ N • fabian.lol</title>
+    <title>Fabian • fabian.lol</title>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" />
@@ -15,10 +15,10 @@
     <link rel="icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" sizes="96x96">
 
     <!-- SEO -->
-    <meta property="og:title" content="F Λ B I Λ N | fabian.lol" />
+    <meta property="og:title" content="Fabian | fabian.lol" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fabian.lol" />
-    <meta property="og:image" content="https://cdn.fabian.lol/banner/fabian.lol.jpg?v=3" />
+    <meta property="og:image" content="https://cdn.fabian.lol/banner/fabian.lol.jpg?v=4" />
     <meta name="theme-color" content="#0B0E11">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -34,6 +34,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
 </head>
 <body>
+<div class="hero">
+    <div class="hero-container">
+        <h1><span class="normal">Hi, I'm </span><span class="text">Fabian</span></h1>
+        <div class="socialmedia">
+            <a id="discord" onclick="copy2Clipboard()"><i class="fab fa-discord"></i></a>
+            <a id="github" href="https://github.com/fabianskutta" target="_blank"><i class="fab fa-github"></i></a>
+            <a id="dribbble" href="https://dribbble.com/fabianskutta" target="_blank"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <a onclick="functionforscroll('repos')"><div class="icon-scroll"></div></a>
+    </div>
+</div>
+<div class="git-repos">
+    <h2><span class="normal">Git Repos</span></h2>
+    <div class="git-container" id="repos">
+    </div>
+</div>
     <div class="footer">
         <div class="status">
             <i class="fas fa-circle" id="status-icon"></i>
@@ -41,11 +57,9 @@
             <div id="spotify"></div>
         </div>
         <div class="commit">
-            <code class="-mt-1">
-                <a href="" id="commit-link" target="_blank">
-                    <i class="fas fa-code-branch"></i> main<span class="at">@</span><span id="commit"></span>
-                </a>
-            </code>
+            <i class="fas fa-code-branch"></i>
+                <a href="" id="commit-link" target="_blank">main@<span id="commit"></span></a>
+                <span class="version-v">V</span><span id="version"></span>
         </div>
     </div>
 
