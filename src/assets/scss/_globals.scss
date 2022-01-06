@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: var(--background1);
-  color: var(--text);
+  color: var(--text1);
   font-family: 'Poppins', sans-serif;
   -webkit-user-select: none; 
   -moz-user-select: none;
@@ -25,19 +25,19 @@ h1 {
 
 h2 {
   color: transparent;
-  -webkit-text-stroke: 0.8px var(--text);
+  -webkit-text-stroke: 0.8px var(--text1);
   font-size: 3rem;
 }
 
 
 ::-moz-selection {
   background: var(--accent1);
-  color: var(--text);
+  color: var(--text1);
 }
 
 ::selection {
   background: var(--accent1);
-  color: var(--text);
+  color: var(--text1);
 }
 
 /* width */

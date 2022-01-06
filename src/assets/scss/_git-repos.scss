@@ -38,6 +38,7 @@
 .git-description {
     margin-bottom: 2.5rem;
     margin-top: 0.5rem;
+    color: var(--text2);
 }
 
 .git-lang {
@@ -81,8 +82,8 @@
 
   @media screen and (min-width: 900px) {
     .git-item-container:hover {
-        box-shadow: 0 1rem 2rem var(--background2);
-        transform: scale(1.05);
+        box-shadow: 6px 10px 19px 0px rgba(0,0,0,0.4);
+        transform: scale(1.03);
     }
     
     .git-item-container:active {

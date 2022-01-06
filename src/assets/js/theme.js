@@ -8,6 +8,7 @@ document.getElementById('theme').addEventListener('click', event => {
         darkmode();
     } else {
         lightmode();
+        lightmodeachievement();
     }
 })
 

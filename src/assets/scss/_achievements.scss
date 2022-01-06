@@ -5,12 +5,14 @@
     box-sizing: border-box;
     bottom: 64px;
     width: 25rem;
+    height: fit-content;
     right: 0;
     background: -webkit-linear-gradient(right,var(--accent1),var(--accent2));
     background: linear-gradient(270deg,var(--accent1) 0,var(--accent2));
     background-size: 350%;
     -webkit-animation: gradientText 3s ease infinite;
     animation: gradientText 3s ease infinite;
+    z-index: 5;
 }
 
 .achievement-icon{
@@ -20,14 +22,23 @@
     position: absolute;
     padding-right: 1.25rem;
     cursor: pointer;
+    color: #111217;
   }
 
 .achievement-title {
     font-weight: 500;
+    color: #111217;
 }
 
 .achievement-description {
     margin-bottom: 1.25rem;
     margin-top: 0.5rem;
     font-weight: 300;
+    color: #1b1d24;
 }
+
+@media screen and (max-width: 900px) {
+    .achievement-container{
+        width: 100%;
+    }
+  }
