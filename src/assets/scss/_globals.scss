@@ -3,70 +3,35 @@ html {
 }
 
 body {
-    background-color: #0B0E11;
-    color: #FFF;
-    font-family: 'Poppins', sans-serif;
-    -webkit-user-select: none; 
-    -moz-user-select: none;
-    user-select: none;
+  background-color: var(--background1);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  user-select: none;
+  transition: all 0.5s;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
 }
 
 h1 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-a {
-    position: relative;
-    transition: 0.5s;
-  }
-
-
-.normal {
-    color: #0B0E11;
-    -webkit-text-stroke: 0.8px white;
-    font-size: 4rem;
-}
-
-
-.text {
-    background: -webkit-linear-gradient(right,#F652A0,#36EEE0);
-    background: linear-gradient(270deg,#F652A0 0,#36EEE0);
-    background-size: 350%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: gradientText 3s ease infinite;
-    animation: gradientText 3s ease infinite;
-    font-size: 4rem;
-}
-
-
-@keyframes gradientText {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
 
 ::-moz-selection {
-    background: #F652A0;
-    color: #FFF;
+  background: var(--accent1);
+  color: var(--text);
 }
 
 ::selection {
-    background: #F652A0;
-    color: #FFF;
+  background: var(--accent1);
+  color: var(--text);
 }
 
 /* width */
@@ -77,11 +42,11 @@ a {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1b232b; 
+  background: var(--background2); 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #242f38; 
+  background: var(--background3); 
 }

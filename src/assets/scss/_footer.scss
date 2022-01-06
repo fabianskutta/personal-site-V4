@@ -10,30 +10,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    background-color: #0B0E11;
-
-    a::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        color: #ecf0f1;
-        height: 3px;
-        top: 100%;
-        left: 0;
-        transition: transform 0.5s;
-        transform: scaleX(0);
-        transform-origin: right;
-        background: -webkit-linear-gradient(right,#F652A0,#36EEE0);
-        background: linear-gradient(270deg,#F652A0 0,#36EEE0);
-        background-size: 350%;
-        -webkit-animation: gradientText 3s ease infinite;
-        animation: gradientText 3s ease infinite;
-      }
-      
-      a:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
-      }
+    background-color: var(--background1);
 }
 
 .status {
@@ -68,4 +45,29 @@
     #spotify {
         display: none;
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    .footer a::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        color: #ecf0f1;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+        background: -webkit-linear-gradient(right,var(--accent1),var(--accent2));
+        background: linear-gradient(270deg,var(--accent1) 0,var(--accent2));
+        background-size: 350%;
+        -webkit-animation: gradientText 3s ease infinite;
+        animation: gradientText 3s ease infinite;
+      }
+      
+    .footer a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
   }

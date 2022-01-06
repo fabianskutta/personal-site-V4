@@ -8,7 +8,7 @@
     height: 50px;
     margin-left: -20px;
     bottom: -14rem;
-    border: 2px solid #fff;
+    border: 2px solid var(--text);
     border-radius: 25px;
     position: relative;
 }
@@ -22,7 +22,7 @@
     content: '';
     width: 8px;
     height: 8px;
-    background: #fff;
+    background: var(--text);
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;

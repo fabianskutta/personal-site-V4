@@ -34,27 +34,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
 </head>
 <body>
-<div class="hero">
-    <div class="hero-container">
-        <h1><span class="normal">Hi, I'm </span><span class="text">Fabian</span></h1>
-        <div class="socialmedia">
-            <a id="discord" onclick="copy2Clipboard()"><i class="fab fa-discord"></i></a>
-            <a id="github" href="https://github.com/fabianskutta" target="_blank"><i class="fab fa-github"></i></a>
-            <a id="dribbble" href="https://dribbble.com/fabianskutta" target="_blank"><i class="fab fa-dribbble"></i></a>
+    <div class="mode-toggle" id="theme">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mode-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+    </div>
+    <div class="hero">
+        <div class="hero-container">
+            <h1><span class="normal">Hi, I'm </span><span class="text">Fabian</span></h1>
+            <div class="socialmedia">
+                <a id="discord" onclick="copy2Clipboard()"><i class="fab fa-discord"></i></a>
+                <a id="github" href="https://github.com/fabianskutta" target="_blank"><i class="fab fa-github"></i></a>
+                <a id="dribbble" href="https://dribbble.com/fabianskutta" target="_blank"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <a onclick="functionforscroll('repos')"><div class="icon-scroll"></div></a>
         </div>
-        <a onclick="functionforscroll('repos')"><div class="icon-scroll"></div></a>
     </div>
-</div>
-<div class="git-repos">
-    <h2><span class="normal">Git Repos</span></h2>
-    <div class="git-container" id="repos">
+    <div class="git-repos">
+        <h2><span class="normal">Git Repos</span></h2>
+        <div class="git-container" id="repos">
+        </div>
     </div>
-</div>
-<div class="dribbble-shots">
-    <h2><span class="normal">Dribbble Shots</span></h2>
-    <div class="dribbble-container" id="shots">
+    <div class="dribbble-shots">
+        <h2><span class="normal">Dribbble Shots</span></h2>
+        <div class="dribbble-container" id="shots">
+        </div>
     </div>
-</div>
     <div class="footer">
         <div class="status">
             <i class="fas fa-circle" id="status-icon"></i>
