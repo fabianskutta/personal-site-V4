@@ -76,7 +76,6 @@ function updateStatus() {
 axios.get('https://api.dribbble.com/v2/user/shots?access_token=b28d431276202a7211d092c641170c274d840ed6877eef6ae357d06563953edc&per_page=4')
     .then(res => {
     let data = res.data;
-    console.log(data);
     data.forEach((data, i) => {
         document.getElementById('shots').innerHTML += `<div class="dribbble-item">
         <a href="${data.html_url}" target="_blank">
