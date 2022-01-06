@@ -23,6 +23,12 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  color: transparent;
+  -webkit-text-stroke: 0.8px var(--text);
+  font-size: 3rem;
+}
+
 
 ::-moz-selection {
   background: var(--accent1);
