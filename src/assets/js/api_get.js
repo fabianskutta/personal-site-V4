@@ -77,13 +77,14 @@ axios.get('https://api.dribbble.com/v2/user/shots?access_token=b28d431276202a721
     .then(res => {
     let data = res.data;
     data.forEach((data, i) => {
-        document.getElementById('shots').innerHTML += `<div class="dribbble-item">
+        document.getElementById('shots').innerHTML += `
         <a href="${data.html_url}" target="_blank">
+        <div class="dribbble-item">
             <div class="dribbble-item-container">
                 <h3 class="dribbble-title">${data.title}</h3>
                 <img src="${data.images.hidpi}" alt="">
-        </a>
-    </div>`;
+        </div>
+        </a>`;
 });
 });
 

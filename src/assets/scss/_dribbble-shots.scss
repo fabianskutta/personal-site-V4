@@ -28,6 +28,7 @@
     padding: 1.25rem;
     border-radius: 1.25rem;
     position: relative;
+    transition: all 0.3s;
 
     img {
         max-width: 100%;
@@ -51,5 +52,16 @@
         font-weight: 700;
         padding-top: 2.25rem;
         text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .dribbble-item-container:hover {
+        box-shadow: 0 1rem 2rem var(--background2);
+        transform: scale(1.05);
+    }
+    
+    .dribbble-item-container:active {
+        transform: scale(1);
     }
   }
