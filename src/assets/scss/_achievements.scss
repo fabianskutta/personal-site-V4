@@ -3,8 +3,8 @@
     position: fixed;
     padding: 1rem;
     box-sizing: border-box;
-    bottom: 64px;
-    width: 25rem;
+    bottom: 4rem;
+    width: 30rem;
     height: fit-content;
     right: 0;
     background: -webkit-linear-gradient(right,var(--accent1),var(--accent2));
@@ -35,6 +35,10 @@
     margin-top: 0.5rem;
     font-weight: 300;
     color: #1b1d24;
+
+    a {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
