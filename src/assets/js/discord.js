@@ -29,6 +29,7 @@ document.getElementById('discord').addEventListener('click', event => {
     </a>
     </div>`;
     tl.fromTo('.achievement-container', {y: 50, opacity:0}, {y: 0, opacity:1})
+    copy2Clipboard("F Λ B I Λ N#7177");
     document.getElementById('achievement-close').addEventListener('click', event => {
         tl.fromTo('.achievement-container', { opacity:1}, { opacity:0, duration: 0.25})
         setTimeout(function(){
