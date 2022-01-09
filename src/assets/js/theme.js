@@ -1,3 +1,5 @@
+localStorage.setItem("theme", "dark");
+
 var theme = localStorage.getItem("theme");
 if (theme == "light") {
     lightmode();
@@ -8,7 +10,7 @@ document.getElementById('theme').addEventListener('click', event => {
         darkmode();
     } else {
         lightmode();
-        lightmodeachievement();
+        lightmodenotification();
     }
 })
 

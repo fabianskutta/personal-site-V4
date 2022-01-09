@@ -10,7 +10,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    background-color: var(--background1);
+    background-color: var(--background3);
+    backdrop-filter: blur(8px);
 }
 
 .status {

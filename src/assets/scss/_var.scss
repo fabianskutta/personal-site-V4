@@ -3,9 +3,16 @@ html {
     --accent2: #36EEE0;
     --background1: #111217;
     --background2: #15171D;
-    --background3: #242f38;
+    --background3: #111217da;
+    --background4: #15171dda;
     --text1: #F4F6FB;
     --text2: #d1d1d1;
+    --scrollbar: #ffffffa9;
+    --scrollbar-hover: #F4F6FB;
+    --btn-primary-bg: #F652A0;
+    --btn-primary-shadow: #F652A04d;
+    --btn-secondary-bg: #ffffffa9;
+    --btn-secondary-shadow: #ffffff4d;
 }
 
 .lightmode {
@@ -13,7 +20,14 @@ html {
     --accent2: #36EEE0;
     --background1: #F4F6FB;
     --background2: #ffffff;
-    --background3: #d8d8d8;
+    --background3: #f4f6fbda;
+    --background4: #ffffffda;
     --text1: #111217;
     --text2: #1b1d24;
+    --scrollbar: #111217a9;
+    --scrollbar-hover: #1b1d24;
+    --btn-primary-bg: #F652A0;
+    --btn-primary-shadow: #F652A04d;
+    --btn-secondary-bg: #111217a9;
+    --btn-secondary-shadow: #1112174d;
 }

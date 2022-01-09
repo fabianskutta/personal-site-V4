@@ -68,6 +68,7 @@
 
 .socialmedia a{
   padding: 10px;
+  margin: 0.25rem;
   border-radius: 50px;
   width: 26px;
   height: 26px;
@@ -75,6 +76,9 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
+  color: #F4F6FB;
+  box-shadow: 0px 3px 13px 3px #F652A04d;
+  background: var(--accent1);
 }
 
 @media screen and (min-width: 900px) {
@@ -84,6 +88,9 @@
     background-size: 350%;
     -webkit-animation: gradientText 3s ease infinite;
     animation: gradientText 3s ease infinite;
-    color: #FFFFFF;
+    transform: scale(.96);
+}
+.socialmedia a:active {
+  transform: scale(.9);
 }
 }
