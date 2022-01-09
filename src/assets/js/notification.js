@@ -69,7 +69,8 @@ function lightmodenotification() {
         <div class="notification-container">
         <h3 class="notification-title">Light Mode</h3>
         <p class="notification-description">You discovered the light side of my website. But only to try it out, right? :)</p>
-        <a id="notification-close" class="btn-small btn-primary">close</a>
+        <a id="backtodark" class="btn-small btn-primary">Back to Dark Mode</a>
+        <a id="notification-close" class="btn-small btn-secondary">close</a>
         </div>`;
         tl.fromTo('.notification-container', {y: 50, opacity:0}, {y: 0, opacity:1}, "+=1.00")
         document.getElementById('notification-close').addEventListener('click', event => {
@@ -77,6 +78,13 @@ function lightmodenotification() {
             setTimeout(function(){
                 document.getElementById('notification').innerHTML = ``;
             }, 1000);
+        })
+        document.getElementById('backtodark').addEventListener('click', event => {
+            darkmode();
+            tl.fromTo('.notification-container', { opacity:1}, { opacity:0, duration: 0.25})
+                    setTimeout(function(){
+                        document.getElementById('notification').innerHTML = ``;
+                    }, 1000);
         })
     }
 }
