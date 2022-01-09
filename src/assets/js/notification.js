@@ -24,19 +24,20 @@ if (n == 10) {
 }
 
 if (n == 1) {
+    localStorage.setItem("theme", "dark");
     document.getElementById('notification').innerHTML = `
     <div class="notification-container">
             <h3 class="notification-title">Welcome!</h3>
-            <p class="notification-description">I don't use any kind of cookies, but your browser's local Storage to save some data. These remain locally on your device. But now have a look around. :)</p>
+            <p class="notification-description">I don't use any kind of cookies, but your browser's local Storage to save some data. These remain locally on your device. But now take a look around. :)</p>
             <a id="notification-close" class="btn-small btn-primary">Ok</a>
-            <a id="what-data" class="btn-small btn-secondary">What data?</a>
+            <a id="what-data" class="btn-small btn-secondary">What data is saved?</a>
             </div>`;
     const tl = gsap.timeline({defaults: {duration: 0.75}})
     document.getElementById('what-data').addEventListener('click', event => {
         document.getElementById('notification').innerHTML = `
         <div class="notification-container">
-        <h3 class="notification-title">Welcome!</h3>
-        <p class="notification-description">I don't use any kind of cookies, but your browser's local Storage to save some data. These remain locally on your device. I save:
+        <h3 class="notification-title">What data is saved?</h3>
+        <p class="notification-description">I don't use any kind of cookies, but your browser's local Storage to save some data. These remain locally on your device. The following data is saved:
         </p>
         <div class="notification-data">
             <li>Your Visits: ${localStorage.getItem('on_load_counter')}</li>

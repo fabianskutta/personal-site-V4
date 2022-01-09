@@ -1,5 +1,3 @@
-localStorage.setItem("theme", "dark");
-
 var theme = localStorage.getItem("theme");
 if (theme == "light") {
     lightmode();
