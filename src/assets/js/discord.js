@@ -21,7 +21,7 @@ document.getElementById('discord').addEventListener('click', event => {
     document.getElementById('notification').innerHTML = `
     <div class="notification-container">
     <h3 class="notification-title">Discord</h3>
-    <p class="notification-description">My Discord username has been copied to your clipboard</p>
+    <p class="notification-description">My Discord username has been copied to your clipboard. (F Λ B I Λ N#7177)</p>
     <a href="${link}" target="_blank" class="btn-small btn-primary">${btn}</a>
     <a id="notification-close" class="btn-small btn-secondary">close</a>
     </div>`;
