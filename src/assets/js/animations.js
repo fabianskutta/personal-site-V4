@@ -4,6 +4,7 @@ tl.fromTo('.hero-container', {y: 50, opacity:0}, {y: 0, opacity:1})
 
 tl.fromTo('.fa-discord', {x: 20, opacity:0, rotation: -40}, {x: 0, opacity:1, rotation: 0}, "-=0.40")
 tl.fromTo('.fa-github', {x: 20, opacity:0, rotation: -40}, {x: 0, opacity:1, rotation: 0}, "-=0.40")
+tl.fromTo('.fa-codepen', {x: 20, opacity:0, rotation: -40}, {x: 0, opacity:1, rotation: 0}, "-=0.40")
 tl.fromTo('.fa-dribbble', {x: 20, opacity:0, rotation: -40}, {x: 0, opacity:1, rotation: 0}, "-=0.40")
 tl.fromTo('.fa-envelope', {x: 20, opacity:0, rotation: -40}, {x: 0, opacity:1, rotation: 0}, "-=0.40")
 
