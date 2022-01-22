@@ -21,12 +21,12 @@ document.getElementById('discord').addEventListener('click', event => {
     document.getElementById('notification').innerHTML = `
     <div class="notification-container">
     <h3 class="notification-title">Discord</h3>
-    <p class="notification-description">My Discord username has been copied to your clipboard. (F Λ B I Λ N#7177)</p>
+    <p class="notification-description">My Discord username has been copied to your clipboard. (Fahrbahn#7177)</p>
     <a href="${link}" target="_blank" class="btn-small btn-primary">${btn}</a>
     <a id="notification-close" class="btn-small btn-secondary">close</a>
     </div>`;
     tl.fromTo('.notification-container', {y: 50, opacity:0}, {y: 0, opacity:1})
-    copy2Clipboard("F Λ B I Λ N#7177");
+    copy2Clipboard("Fahrbahn#7177");
     document.getElementById('notification-close').addEventListener('click', event => {
         tl.fromTo('.notification-container', { opacity:1}, { opacity:0, duration: 0.25})
         setTimeout(function(){
