@@ -11,6 +11,12 @@ axios.get('https://api.github.com/repos/fabianskutta/personal-site/commits?per_p
     document.getElementById('commit-link').href = data.html_url;
     });
 
+axios.get('https://api.fabian.lol/?about')
+    .then(res => {
+    let data = res.data;
+    document.getElementById('about-text').innerHTML = data.about;
+    });
+
 axios.get('https://api.github.com/users/fabianskutta/repos?sort=updated&type=sources&per_page=4')
     .then(res => {
     let data = res.data;

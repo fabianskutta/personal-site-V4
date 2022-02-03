@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +32,6 @@
     <!-- import librarys -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
 </head>
 <body>
@@ -45,7 +45,17 @@
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
         </svg>
     </div>
-    <div class="hero">
+    <div class="nav">
+        <div class="nav-container">
+            <ul>
+                <li class="active-link"><a href="#hero"><i class="fas fa-home"></i></a></li>
+                <li><a href="#about"><i class="fas fa-address-card"></i></a></li>
+                <li><a href="#git-repos"><i class="fab fa-github"></i></a></li>
+                <li><a href="#dribbble-shots"><i class="fab fa-dribbble"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero" id="hero">
         <div class="hero-container">
             <h1><span class="normal">Hi, I'm </span><span class="text">Fabian</span></h1>
             <div class="socialmedia">
@@ -55,18 +65,29 @@
                 <a id="dribbble" href="https://dribbble.com/fabianskutta" target="_blank"><i class="fab fa-dribbble"></i></a>
                 <a id="e-mail" href="mailto:hello@fabian.lol"><i class="fas fa-envelope"></i></a>
             </div>
-            <a onclick="functionforscroll('repos')"><div class="icon-scroll"></div></a>
+            <a href="#about"><div class="icon-scroll"></div></a>
         </div>
     </div>
-    <div class="git-repos">
+    <div class="about" id="about">
+        <div class="about-container">
+            <h2 class="mobile">A quick summary</h2>
+            <img src="https://cdn.fabian.lol/me.jpg">
+            <div class="about-text" id="about-text">
+            </div>
+        </div>
+    </div>
+    <div class="git-repos" id="git-repos">
         <h2>Github Repositories</h2>
         <div class="git-container" id="repos">
         </div>
     </div>
-    <div class="dribbble-shots">
+    <div class="dribbble-shots" id="dribbble-shots">
         <h2>Dribbble Shots</h2>
         <div class="dribbble-container" id="shots">
         </div>
+    </div>
+    <div class="rocket-btn">
+        <a href="#hero" class="btn-big btn-primary"><i class="fas fa-rocket"></i></i> launch the rocket</a>
     </div>
     <div class="bar">
         <div class="status">

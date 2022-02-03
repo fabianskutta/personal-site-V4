@@ -14,7 +14,7 @@ if (n == 10) {
     <a id="notification-close" class="btn-small btn-primary">close</a>
     </div>`;
     const tl = gsap.timeline({defaults: {duration: 0.75}})
-    tl.fromTo('.notification-container', {y: 50, opacity:0}, {y: 0, opacity:1}, "+=3.00")
+    tl.fromTo('.notification-container', {y: 50, opacity:0}, {y: 0, opacity:1}, "+=2.00")
     document.getElementById('notification-close').addEventListener('click', event => {
         tl.fromTo('.notification-container', { opacity:1}, { opacity:0, duration: 0.25})
         setTimeout(function(){
@@ -53,7 +53,7 @@ if (n == 1) {
             }, 1000);
         })
     })
-    tl.fromTo('.notification-container', {y: 50, opacity:0}, {y: 0, opacity:1}, "+=3.00")
+    tl.fromTo('.notification-container', {y: 50, opacity:0}, {y: 0, opacity:1}, "+=2.00")
     document.getElementById('notification-close').addEventListener('click', event => {
         tl.fromTo('.notification-container', { opacity:1}, { opacity:0, duration: 0.25})
         setTimeout(function(){

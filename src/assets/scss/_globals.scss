@@ -1,15 +1,15 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   background-color: var(--background1);
   color: var(--text1);
   font-family: 'Poppins', sans-serif;
-  -webkit-user-select: none; 
-  -moz-user-select: none;
   user-select: none;
-  transition: all 0.5s;
+  height: 100%;
+  //transition: all 0.5s;
 }
 
 a {
@@ -59,3 +59,15 @@ h2 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-hover); 
 }
+
+@media screen and (max-width: 900px) {
+ .pc {
+   display: none;
+ }
+}
+
+@media screen and (min-width: 900px) {
+  .mobile {
+    display: none;
+  }
+ }
