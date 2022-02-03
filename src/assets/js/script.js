@@ -40,3 +40,5 @@ document.addEventListener("visibilitychange", function() {
     document.title = 'Fabian • fabian.lol'; 
   }
 })
+
+console.info("Hey! Cool that you want to take a closer look at my website. You can find the source code here: https://short.fabian.lol/lb1")
