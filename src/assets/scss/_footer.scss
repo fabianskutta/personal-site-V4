@@ -1,16 +1,29 @@
 .footer {
-    background-color: var(--background1);
-    padding: 1rem;
-    position: relative;
-    width: 60%;
-    font-size: 20px;
-    font-weight: 300;
-    box-sizing: border-box;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
 }
 
+.footer-container {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--text2);
+    transition: all 0.3s;
+    width: fit-content;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .footer-container:hover {
+        color: var(--text1);
+    }
+  }
+
 @media screen and (max-width: 900px) {
-    .footer {
-        width: 100%;
+    .footer-container {
         font-size: 16px;
     }
   }
