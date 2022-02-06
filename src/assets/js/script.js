@@ -42,3 +42,9 @@ document.addEventListener("visibilitychange", function() {
 })
 
 console.info("Hey! Cool that you want to take a closer look at my website. You can find the source code here: https://short.fabian.lol/lb1")
+
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+if (isFirefox == true) {
+  document.getElementsByTagName( 'html' )[0].classList.add("firefox");
+}

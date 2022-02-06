@@ -28,6 +28,16 @@ html {
     --btn-secondary-shadow: #1112174d;
 }
 
+.firefox {
+    --background3: #111217;
+    --background4: #15171d;
+}
+
+.firefox.lightmode {
+    --background3: #f4f6fb;
+    --background4: #ffffff;
+}
+
 .theme1 {
     --accent1: #F652A0;
     --accent2: #36EEE0;
