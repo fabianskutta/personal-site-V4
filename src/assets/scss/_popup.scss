@@ -1,0 +1,111 @@
+.popup {
+    position: fixed;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: var(--text1);
+    z-index: 500;
+    transition: all 0.3s;
+  
+  .close {
+    color: var(--text1);
+    float: right;
+    font-size: 28px;
+    font-weight: 700;
+    z-index: 600;
+    transition: all 0.3s;
+  }
+  
+  .close:hover,.close:focus {
+    color: var(--accent1);
+    text-decoration: none;
+    cursor: pointer;
+  } 
+}
+
+.popup-container {
+    background-color: var(--background3);
+    backdrop-filter: blur(10px);
+    margin: 5rem;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    border-radius: 0.25rem;
+
+    h3 {
+        color: var(--text1);
+        font-size: 2rem;
+        text-align: center;
+      }
+
+    p {
+        text-align: center;
+        font-weight: 300;
+    }
+  }
+
+.popup-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-bottom: 1.25rem;
+    margin: 0 10rem;
+  }
+  
+  .popup-item {
+    margin: 1.25rem;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 0 300px;
+    flex-flow: column;
+    max-width: 350px;
+  }
+  
+  .popup-item-container {
+    background-color: var(--background2);
+    //border: 1px solid var(--text1);
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    position: relative;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .popup-icon{
+        width: 5rem;
+        height: 5rem;
+        margin: 1.25rem 0;
+      }
+}
+
+.owned {
+    background-color: var(--accent1);
+    border: 1px solid #f4f6fb00;
+    color: #FFF;
+    box-shadow: 0px 3px 13px 3px var(--btn-primary-shadow);
+}
+
+@media screen and (max-width: 900px) {
+    .popup-container {
+        margin: 0;
+    }
+
+    .popup-flex {
+        margin: 0;
+    }
+    h2 {
+        font-weight: 700;
+        padding-top: 2.25rem;
+        text-align: center;
+    }
+  }
