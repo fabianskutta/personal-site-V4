@@ -7,6 +7,7 @@ function achievements() {
   var m1 = localStorage.getItem('achievement-1');
   var m2 = localStorage.getItem('achievement-2');
   var m3 = localStorage.getItem('achievement-3');
+  var c = localStorage.getItem('on_load_counter');
   if (m1 == "true") {
       document.getElementById('achievement-1').innerHTML = `
       <div class="popup-item-container owned">
@@ -36,6 +37,9 @@ function achievements() {
     }
     if (m1 == "true" && m2 == "true" && m3 == "true") {
       document.getElementById('g').innerHTML = `You already know my website very well! You have found all achievements.`;
+    }
+    if (m1 == "true" && m2 == "false" && m3 == "true") {
+      document.getElementById('g').innerHTML = `In order to get the latest achievement, you may need to visit my website more often. Your Visits: ${c}`;
     }
     }
 

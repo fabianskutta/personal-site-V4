@@ -1,4 +1,5 @@
-var randomcolor = get_random(['theme1','theme2', 'theme3', 'theme4']);
+//var randomcolor = get_random(['theme1','theme2', 'theme3', 'theme4']);
+var randomcolor = "theme1";
 var color = randomcolor;
 document.getElementsByTagName( 'html' )[0].classList.add(randomcolor);
 
