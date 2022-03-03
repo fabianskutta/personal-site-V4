@@ -32,6 +32,15 @@
     br {
         padding-top: 10px;
     }
+
+    a {
+        color: var(--accent1);
+        font-weight: 500;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -44,7 +53,6 @@
             color: var(--text2);
             width: 100%;
             font-size: 18px;
-            text-align: justify;
         }
 
         img {
@@ -59,4 +67,29 @@
         padding-top: 2.25rem;
         text-align: center;
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    .about-text a::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        color: #ecf0f1;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+        background: -webkit-linear-gradient(right,var(--accent1),var(--accent2));
+        background: linear-gradient(270deg,var(--accent1) 0,var(--accent2));
+        background-size: 350%;
+        -webkit-animation: gradientText 3s ease infinite;
+        animation: gradientText 3s ease infinite;
+      }
+      
+      .about-text a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
   }
