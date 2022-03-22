@@ -26,15 +26,14 @@
 }
 
 .hero-container {
-  position: absolute;
   text-align: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .hero {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text {
@@ -85,18 +84,19 @@
   justify-content: center;
   transition: all 0.3s;
   color: #F4F6FB;
-  box-shadow: 0px 3px 13px 3px var(--btn-primary-shadow);
-  background: var(--accent1);
 }
 
 @media screen and (min-width: 900px) {
+
+  .socialmedia:hover {
+    a{
+      color: var(--scrollbar);
+    }
+  }
+
   .socialmedia a:hover {
-    background: -webkit-linear-gradient(right,var(--accent1),var(--accent2));
-    background: linear-gradient(270deg,var(--accent1) 0,var(--accent2));
-    background-size: 350%;
-    -webkit-animation: gradientText 3s ease infinite;
-    animation: gradientText 3s ease infinite;
-    transform: scale(.96);
+    transform: scale(1.09);
+    color: var(--text1);
 }
 .socialmedia a:active {
   transform: scale(.9);
