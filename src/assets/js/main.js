@@ -380,17 +380,11 @@ document.addEventListener("visibilitychange", function() {
     var newtitle = `${randomElement} • fabian.lol`;
     document.title = newtitle;
   } else {
-    document.title = 'Fabian • fabian.lol'; 
+    document.title = 'Fabian Skutta • fabian.lol'; 
   }
 })
 
 console.info("Hey! Cool that you want to take a closer look at my website. You can find the source code here: https://short.fabian.lol/lb1")
-
-var isFirefox = typeof InstallTrigger !== 'undefined';
-
-if (isFirefox == true) {
-  document.getElementsByTagName( 'html' )[0].classList.add("firefox");
-}
 
 // Scroll
 
@@ -428,8 +422,7 @@ $(window).scroll(function(){
 
 // Theme
 
-//var randomcolor = get_random(['theme1','theme2', 'theme3', 'theme4']);
-var randomcolor = "theme1";
+var randomcolor = get_random(['theme1','theme2', 'theme3', 'theme4']);
 var color = randomcolor;
 document.getElementsByTagName( 'html' )[0].classList.add(randomcolor);
 

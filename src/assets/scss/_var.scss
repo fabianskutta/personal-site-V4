@@ -1,6 +1,6 @@
 html {
-    --accent1: #005BBB;
-    --accent2: #FFD500;
+    --accent1: #F9063B;
+    --accent2: #F9A90D;
     --background1: #111217;
     --background2: #15171D;
     --background3: #111217da;
@@ -28,28 +28,18 @@ html {
     --btn-secondary-shadow: #1112174d;
 }
 
-.firefox {
-    --background3: #111217;
-    --background4: #15171d;
-}
-
-.firefox.lightmode {
-    --background3: #f4f6fb;
-    --background4: #ffffff;
-}
-
 .theme1 {
-    --accent1: #005BBB;
-    --accent2: #FFD500;
-    --btn-primary-bg: #005BBB;
-    --btn-primary-shadow: #005BBB4d;
-}
-
-.theme2 {
     --accent1: #F9063B;
     --accent2: #F9A90D;
     --btn-primary-bg: #F9063B;
     --btn-primary-shadow: #F9063B4d;
+}
+
+.theme2 {
+    --accent1: #6daa5c;
+    --accent2: #3b8084;
+    --btn-primary-bg: #6daa5c;
+    --btn-primary-shadow: #6daa5c4d;
 }
 
 .theme3 {
