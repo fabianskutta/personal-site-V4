@@ -1,5 +1,6 @@
 //CSS
 import './../scss/main.scss';
+import './scrollAnimations'
 
 //JS
 var modal = document.getElementById("popup");
