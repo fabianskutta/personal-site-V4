@@ -176,7 +176,7 @@ setInterval(updateStatus, 15000);
 // Discord
 
 function copy2Clipboard(text) {
-    ta = document.createElement('textarea');
+    var ta = document.createElement('textarea');
     ta.value = text;
     document.body.appendChild(ta);
     ta.select();
@@ -268,7 +268,7 @@ if (n == 10) {
     <div class="notification-container">
     <h3 class="notification-title">10 visits</h3>
     <p class="notification-description">You're visiting my website for the 10th time. Wooooooow that's crazy!</p>
-    <a onclick="achievements()" id="achievements-btn" class="btn-small btn-primary">View achievements</a>
+    <a id="achievements-btn" class="btn-small btn-primary">View achievements</a>
     <a id="notification-close" class="btn-small btn-secondary">close</a>
     </div>`;
     const tl = gsap.timeline({defaults: {duration: 0.75}})
@@ -279,6 +279,9 @@ if (n == 10) {
             document.getElementById('notification').innerHTML = ``;
         }, 1000);
     })
+    document.getElementById('achievements-btn').addEventListener('click', event => {
+        achievements();
+    })
 }
 
 if (n == 1) {
@@ -287,7 +290,7 @@ if (n == 1) {
     <div class="notification-container">
             <h3 class="notification-title">Welcome! It's not about cookies.</h3>
             <p class="notification-description">There are various achievements that you can get on my website. Have fun searching! :)</p>
-            <a onclick="achievements()" id="achievements-btn" class="btn-small btn-primary">View achievements</a>
+            <a id="achievements-btn" class="btn-small btn-primary">View achievements</a>
             <a id="notification-close" class="btn-small btn-secondary">close</a>
             </div>`;
     const tl = gsap.timeline({defaults: {duration: 0.75}})
@@ -297,6 +300,9 @@ if (n == 1) {
         setTimeout(function(){
             document.getElementById('notification').innerHTML = ``;
         }, 1000);
+    })
+    document.getElementById('achievements-btn').addEventListener('click', event => {
+        achievements();
     })
 }
 
@@ -308,7 +314,7 @@ function lightmodenotification() {
         <div class="notification-container">
         <h3 class="notification-title">Light Mode</h3>
         <p class="notification-description">You discovered the light side of my website. But only to try it out, right? :)</p>
-        <a onclick="achievements()" id="achievements-btn" class="btn-small btn-primary">View achievements</a>
+        <a id="achievements-btn" class="btn-small btn-primary">View achievements</a>
         <a id="notification-close" class="btn-small btn-secondary">close</a>
         </div>`;
         tl.fromTo('.notification-container', {y: 50, opacity:0}, {y: 0, opacity:1}, "+=1.00")
@@ -317,6 +323,9 @@ function lightmodenotification() {
             setTimeout(function(){
                 document.getElementById('notification').innerHTML = ``;
             }, 1000);
+        })
+        document.getElementById('achievements-btn').addEventListener('click', event => {
+            achievements();
         })
     }
 }
@@ -329,7 +338,7 @@ document.getElementById("rocket-btn").onclick = function() {
         <div class="notification-container">
         <h3 class="notification-title">Rocket launched!</h3>
         <p class="notification-description">You launched the rocket to get back to the top.</p>
-        <a onclick="achievements()" id="achievements-btn" class="btn-small btn-primary">View achievements</a>
+        <a id="achievements-btn" class="btn-small btn-primary">View achievements</a>
         <a id="notification-close" class="btn-small btn-secondary">close</a>
         </div>`;
         tl.fromTo('.notification-container', {y: 50, opacity:0}, {y: 0, opacity:1}, "+=1.00")
@@ -338,6 +347,9 @@ document.getElementById("rocket-btn").onclick = function() {
             setTimeout(function(){
                 document.getElementById('notification').innerHTML = ``;
             }, 1000);
+        })
+        document.getElementById('achievements-btn').addEventListener('click', event => {
+            achievements();
         })
     }
 }
@@ -500,3 +512,7 @@ function favicon() {
         changeFavicon(`https://cdn.fabian.lol/logos/favicon-${color}.png`);
     }
 }
+
+document.getElementById('achievements-btn-top').addEventListener('click', event => {
+    achievements();
+})

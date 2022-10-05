@@ -1,9 +1,9 @@
 {
 	"name": "personal-site",
 	"private": false,
-	"version": "4.3.2",
+	"version": "4.3.3",
 	"scripts": {
-		"dev": "vite",
+		"dev": "vite --host",
 		"build": "vite build",
 		"test": "vitest",
 		"coverage": "vitest run --coverage",

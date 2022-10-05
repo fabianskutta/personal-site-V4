@@ -31,6 +31,7 @@
 .popup-container {
     background-color: var(--background3);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     margin: 5rem;
     padding: 20px;
     box-sizing: border-box;
@@ -53,7 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 1.25rem;
     margin: 0 10rem;
   }
@@ -98,10 +99,10 @@
 @media screen and (max-width: 900px) {
     .popup-container {
         margin: 0;
-    }
 
-    .popup-flex {
-        margin: 0;
+        h3 {
+          font-size: 1.5rem;
+        }
     }
     h2 {
         font-weight: 700;

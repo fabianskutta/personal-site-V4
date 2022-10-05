@@ -10,6 +10,7 @@
     box-sizing: border-box;
     background-color: var(--background4);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     margin: auto;
 }
 
@@ -77,6 +78,12 @@
 
     .btn-small {
         width: 100%;
+    }
+
+    .achievements-btn {
+        .btn-small {
+            width: fit-content;
+        }
     }
 
     .btn-secondary {

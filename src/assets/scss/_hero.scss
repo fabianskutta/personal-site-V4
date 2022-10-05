@@ -1,7 +1,7 @@
 .mode-toggle {
   display: flex;
   position: fixed;
-  z-index: 2;
+  z-index: 6;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -23,6 +23,15 @@
 .mode-icon{
   width: 2rem;
   height: 2rem;
+}
+
+.achievements-btn {
+  position: fixed;
+  top: 2rem;
+  display: flex;
+  width: 100%;
+  z-index: 5;
+  left: 7rem;
 }
 
 .hero-container {
@@ -100,5 +109,13 @@
 }
 .socialmedia a:active {
   transform: scale(.9);
+}
+}
+
+@media screen and (max-width: 900px) {
+
+.achievements-btn {
+  justify-content: center;
+  left: 0;
 }
 }
